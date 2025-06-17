@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from './components/layout/Sidebar';
+import Header from './components/layout/Header';
+import Dashboard from './pages/Dashboard';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="min-h-screen bg-[#18181b] dark:bg-[#18181b]">
+      <Sidebar />
+      <Header />
+      <main className="ml-60 pt-16 min-h-screen flex justify-center items-start bg-[#18181b] dark:bg-[#18181b]">
+        <Dashboard />
+      </main>
     </div>
   );
 }
