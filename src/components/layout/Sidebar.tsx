@@ -39,7 +39,7 @@ const Sidebar = () => {
         >
           {collapsed ? <ChevronRightIcon className="w-5 h-5" /> : <ChevronLeftIcon className="w-5 h-5" />}
         </button>
-        <a href="#" className="text-xs text-blue-400 hover:underline self-start ml-2">View status</a>
+        <a href="#" className="text-xs text-blue-400 hover:underline self-start ml-2">View status 2</a>
       </div>
     </aside>
   );
